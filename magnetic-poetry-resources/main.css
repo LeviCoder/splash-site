@@ -3,6 +3,7 @@ body, html {
     padding: 0px;
 
     font-family: "averia serif libre", serif;
+    font-size: 12pt;
 }
 
 #wordspace {
@@ -13,11 +14,59 @@ body, html {
 
 .word-el {
     padding: 3px;
-    color: black;
-    border: 1px solid #777;
     position: absolute;
-    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+
+    /* 
+    thanks to w3 Schools for turning off text selection
+    https://www.w3schools.com/howto/howto_css_disable_text_selection.asp
+    */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 .word-el:hover {
     cursor: pointer;
+}
+
+.word-el-basic {
+    color: black;
+    border-color: #777;
+    background-color: white;
+}
+
+
+.text-el {
+    color: #864b68;
+    border-color: #cd6b9c;
+    background-color: #fff0f8;
+}
+
+
+.word-highlighted {
+    background: rgb(200, 224, 244);
+}
+
+
+#blocker {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0003;
+    backdrop-filter: blur(1px);
+
+    position: fixed;
+    top: 0px;
+}
+#popup {
+    max-width: fit-content;
+    border: 1px solid black;
+    padding: 30px;
+    margin: 20px;
+    box-shadow: 4px 4px 8px #0009;
+    background: white;
+
+    position: relative;
+    margin: 10% auto;
+    top: 0px;
 }
