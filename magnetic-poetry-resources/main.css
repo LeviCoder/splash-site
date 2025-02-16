@@ -1,0 +1,17 @@
+body, html {
+    margin: 0px;
+    padding: 0px;
+}
+
+#wordspace {
+    max-width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.word-el {
+    padding: 5px;
+    color: black;
+    border: 1px solid black;
+}
